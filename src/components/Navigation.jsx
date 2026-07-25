@@ -7,9 +7,9 @@ const Navigation = () => {
   return (
     <div>
       <div className='navbar'>
-        <img src={logo} alt="logo" onClick={() => navigate('/')}/>
+        <img src={logo} alt="logo" onClick={() => navigate('/home')}/>
         <ul>
-          <li><NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Home</NavLink></li>
+          <li><NavLink to="/home" className={({ isActive }) => isActive ? "active-link" : ""}>Home</NavLink></li>
           <li><NavLink to="/menu" className={({ isActive }) => isActive ? "active-link" : ""}>Menu</NavLink></li>
           <li><NavLink to="/review" className={({ isActive }) => isActive ? "active-link" : ""}>Review</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>Contact</NavLink></li>
