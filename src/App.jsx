@@ -11,10 +11,13 @@ const App = () => {
     <div>
       <Navigation />
       <Routes>
-        <Route path='/home' element={<Home/>} />
-        <Route path='/menu' element={<Menu/>} />
-        <Route path='/review' element={<Review/>} />
-        <Route path='/contact' element={<Contact/>} />
+-        <Route path='/' element={<Home/>} />
++        <Route path='/' element={<Navigate to="/home" replace />} />
++        <Route path='/home' element={<Home/>} />
+         <Route path='/menu' element={<Menu/>} />
+         <Route path='/review' element={<Review/>} />
+         <Route path='/contact' element={<Contact/>} />
++        <Route path='*' element={<Navigate to="/home" replace />} />
       </Routes>
       <menu/>
       <Footer/>
